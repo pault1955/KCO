@@ -1,0 +1,96 @@
+// ======================================
+// slice  bio with 3 buttons
+// ======================================
+
+// slice  bio with 3 buttons layout
+// ======================================
+.slice_bio_3_buttons {
+
+    .block2-1, .block2-2 {
+        @include span(12);
+    }
+
+
+    .block2-1 {
+        @include susy-breakpoint($breakpoint-ti) {
+            @include span(3);
+        }
+
+        @include susy-breakpoint($breakpoint-sm) {
+            @include span(6);
+        }
+    }
+    .block2-2 {
+
+        @include susy-breakpoint($breakpoint-ti) {
+            @include span(9);
+        }
+
+        @include susy-breakpoint($breakpoint-sm) {
+            @include span(6);
+        }
+
+        .block3 a {
+            @include span(12);
+
+            @include susy-breakpoint($breakpoint-md) {
+                @include span(4);
+            }
+        }
+
+    }
+
+    .block3  {
+
+    }
+
+}
+
+// slice  bio with 3 buttons style
+// ======================================
+
+.slice_bio_3_buttons {
+
+    background-color: $bio-background-color;
+    padding: 30px 0;
+
+    .block2-1 {
+
+        .bio-image {
+            display: block;
+            width: 50%;
+            margin: 0 auto 20px;
+        }
+    }
+
+
+    .block2-2 {
+        padding: 15px;
+        color: $bio_color;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-align: center;
+
+
+        @include susy-breakpoint ($breakpoint-sm) {
+            text-align: left;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            padding-left: 85px;
+        }
+        @include susy-breakpoint ($breakpoint-md) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .block3 {
+            a {
+                display: block;
+            }
+        }
+    }
+
+
+}

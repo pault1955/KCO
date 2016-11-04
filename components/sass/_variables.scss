@@ -30,8 +30,8 @@ $bold     : 700;
 $heavy    : 800;
 
 // site defaults
-$default_font-family : Lato, Arial, sans-serif;
-$default_font-family-2 : Montserrat, Arial, sans-serif;
+$default_font-family : 'Open Sans', Arial, sans-serif;
+$default_font-family-2 : Merriweather, serif;
 $default_font-color  : #2b4049;
 $default_font-size   : 1.5rem;
 $default_line-height : $default_font-size + 0.2rem;
@@ -47,6 +47,7 @@ $default_button-color--hover: #fff;
 $default_form_border-color: #dadee4;
 $default_placeholder-color: #4acfc7;
 
+$header_background-color: #565270;
 
 // ======================================
 //  site logo & site name
@@ -60,45 +61,45 @@ $site_name-color: #2b4049;
 // ======================================
 //  top links
 // ======================================
-$top_links_icon-color: #129dc0;
+$top_links_icon-color: #fff;
 $top_links_font-size: 16px;
 $top_links_line-height: 20px;
-$top_links_color: #2b4049;
-$top_links_color--hover: #000;
-$top_links-background-color: #f5f5f5;
-$top_links-background-color--hover: #dceff4;
+$top_links_color: #fff;
+$top_links_color--hover: #fff;
+$top_links-background-color: transparent;
+$top_links-background-color--hover:  transparent;
 
 // ======================================
 //  search overlay
 // ======================================
 
-$search_box-background-color: #4acfc7;
+$search_box-background-color: #565270;
 $search_box_input-border-color: #fff;
 $search_box_input-border-color--hover: #fff;
 $search_box_input-background-color: #f5f5f5;
 $search_box_input-background-color--hover: #fff;
-$search_box_input-color: #2c4048;
-$search_box_input-color--hover: #2c4048;
+$search_box_input-color: #565270;
+$search_box_input-color--hover: #565270;
 
 
 // ======================================
 //  slicknav mobile menu
 // ======================================
 
-$slicknav_button-menu-color: #2c4048;
+$slicknav_button-menu-color: #fff;
 $slicknav_button-text-shadow: none;
 $slicknav_button-background-color: transparent ;
 $slicknav_button-background-color--open: transparent;
-$slicknav_icon-menu-color: #2c4048;
-$slicknav_icon-menu-background-color: #5acfc6;
+$slicknav_icon-menu-color: #fff;
+$slicknav_icon-menu-background-color: #fff;
 
-$slicknav-color: #2b4049;
+$slicknav-color: #2c4048;
 $slicknav-text-shadow: none;
 $slicknav-header-background-color: transparent;
 $slicknav-top-level-background-color: #f5f5f5;
 $slicknav-background-color: #f5f5f5;
 $slicknav-background-color--hover: #fff;
-$slicknav-color--hover: #129dc0;
+$slicknav-color--hover: #565270;
 $slicknav-color--open: $slicknav-color;
 $slicknav-background--open: #f5f5f5;
 $slicknav-background--open--hover: #fff;
@@ -111,7 +112,7 @@ $slicknav-background-parent--collapsed: #f5f5f5;
 $slicknav-background-parent--open: #f5f5f5;
 
 // ======================================
-//  slice banner slideshow
+//  slice mini slideshow
 // ======================================
 $banner_slideshow-background-color: #fff;
 $banner_slideshow_pager-background-color: #f5f5f5;
@@ -137,19 +138,19 @@ $banner_slideshow_icon_color--hover: #fff;
 // ======================================
 
 $nav_background-color: transparent;
-$nav_link-color: #2c4048;
-$nav_link-color--hover: #129dc0;
+$nav_link-color: #fff;
+$nav_link-color--hover: #565270;
 $nav_link-font-size: 1.6rem;
-$nav_link-font-weight: $bold;
-$nav_link-background-color: #ffffff;
+$nav_link-font-weight: $normal;
+$nav_link-background-color: #565270;
 $nav_link-background-color--hover: #f5f5f5;
-$nav_link_top-margin-top: 4px;
+$nav_link_top-margin-top: 0;
 $nav_link_home-margin-top: 0;
 
 $nav_dropdown_link-font-size: 1.6rem;
 $nav_dropdown_link-background-color: #f5f5f5;
 $nav_dropdown_link-color: #2c4048;
-$nav_dropdown_link-color--hover: #129dc0;
+$nav_dropdown_link-color--hover: #565270;
 $nav_dropdown-background-color: #f5f5f5;
 $nav_dropdown-background-color--hover: #ffffff;
 
@@ -159,12 +160,29 @@ $nav_dropdown-reverse-last-item-opening-direction: true; // set to true or false
 //  slice blocks 2
 // ======================================
 
-$block2-color: #2d4048;
-$block2_title-color: #2d4048;
-$block2_background-color: #f5f5f5;
+$block2-color: #5c585d;
+$block2_title-color: #5c585d;
+$block2_background-color: #f0f3f4;
 $block2_border-color: #e1e1e1;
-$block2_icon_color: #4acfc7;
+$block2_icon_color: #69648b;
 $block2_icon_font-size: 4rem;
+
+// ======================================
+//  slice bio
+// ======================================
+
+$bio-color: #5c585d;
+$bio_title-color: #565270;
+$bio_title_font-size: 4rem;
+$bio_title_margin-bottom: 1rem;
+$bio_background-color: #fff;
+$bio_icon_color: #b89d92;
+$bio_icon_font-size: 4rem;
+$bio_button_color: #fff;
+$bio_button_background-color: #b89d92;
+$bio_button_font-size: 2rem;
+
+
 
 // ======================================
 //  slice block 1
@@ -185,41 +203,12 @@ $block1_font-size: 1.5rem;
 $block1_line-height: $block1_font-size + 0.5rem;
 
 // ======================================
-//  slice block 1 form
-// ======================================
-
-$block1_form-color: #fff;
-$block1_form_title-color: #2d4048;
-$block1_form_title_font-size: 2rem;
-$block1_form_title_font-family: $default_font-family-2;
-$block1_form_title_margin-bottom: 1rem;
-$block1_form_slice_background-image: #fff url(../images/stripes.png);
-$block1_form_background-color: #5acfc6;
-$block1_form_button-font-size: 1.3rem;
-$block1_form_button-color: #fff;
-$block1_form_button-color--hover: #fff;
-$block1_form_button-border-color: #2b91ad;
-$block1_form_button-border-color--hover: #2d9ebd;
-$block1_form_button_background-color: #2b91ad;
-$block1_form_button_background-color--hover: #2d9ebd;
-$block1_form_font-size: 1.5rem;
-$block1_form_line-height: $block1_font-size + 0.8rem;
-$block1_form_label-font-size: 1.5rem;
-$block1_form_label-color: #fff;
-$block1_form_text_title-color: #fff;
-$block1_form_text_title_font-size: 1.8rem;
-$block1_form_text_title_margin-bottom: 1.8rem;
-$block1_form_input_background-color: #fff;
-$block1_form_input_color: #7f7e7e;
-$block1_form_input_font-size: 1.7rem;
-
-// ======================================
 //  slice block 1 background image
 // ======================================
 
 $block1_image-color: #fff;
 $block1_image_font-family: $default_font-family-2;
-$block1_image_slice_background-image: url(../images/children.jpg);
+$block1_image_slice_background-image: url(../images/banner.jpg);
 $block1_image_title1-color: #fff;
 $block1_image_title1_font-size: 2.5rem;
 $block1_image_title1_margin-bottom: 1rem;

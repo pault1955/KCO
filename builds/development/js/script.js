@@ -40,13 +40,6 @@ $(document).ready(function () {
     'afterClose': function() {
       $('.slice_header .slicknav_menu').css({'margin-bottom':'0'});
 
-    },
-    'init': function(){
-      if ($('body').hasClass('guest_user')) {
-        $('<li class="sign_in_nav"><div class="statusbar"><a href="/user/login.aspx" title="Login to access more features">Login</a><a href="/User/Registration.aspx" title="Apply for web site username and password" class="register_link">Register</a></div></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
-      }else{
-        $('<li class="log_out_nav"><div class="statusbar"><a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a href="/Admin/Default.aspx" title="Access site administration pages" class="weboffice_link">Web Office</a></div></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
-      }
     }
   });
 

@@ -1,7 +1,7 @@
 // ======================================
 //  site wide
 // ======================================
-@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Open+Sans:400,400i,700,700i');
 
 
 section, .isolate_element {
@@ -40,6 +40,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 .container {
@@ -174,14 +175,14 @@ img.preview_show {
         padding: 5px 10px;
         border-radius: 2px;
         transition: background-color 500ms ease;
-        font-size: $block1_form_button-font-size;
+        font-size: $block1_button-font-size;
         text-align: center;
         letter-spacing: 1px;
         text-decoration: none;
         text-transform: uppercase;
         border: 2px solid $default_button-border-color;
         background-color: $default_button-background-color;
-        color: $block1_form_button-color;
+        color: $block1_button-color;
 
         &:hover {
           border: 2px solid $default_button-border-color--hover;
