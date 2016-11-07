@@ -1196,17 +1196,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   margin-left: 1.28866%;
   margin-right: 1.28866%;
 }
-@media (min-width: 467px) {
-  /* line 14, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
-  .slice_bio_3_buttons .block2-1 {
-    width: 22.42268%;
-    float: left;
-    margin-left: 1.28866%;
-    margin-right: 1.28866%;
-  }
-}
-@media (min-width: 768px) {
-  /* line 14, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+@media (min-width: 992px) {
+  /* line 13, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
   .slice_bio_3_buttons .block2-1 {
     width: 47.42268%;
     float: left;
@@ -1214,17 +1205,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     margin-right: 1.28866%;
   }
 }
-@media (min-width: 467px) {
-  /* line 23, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
-  .slice_bio_3_buttons .block2-2 {
-    width: 72.42268%;
-    float: left;
-    margin-left: 1.28866%;
-    margin-right: 1.28866%;
-  }
-}
-@media (min-width: 768px) {
-  /* line 23, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+@media (min-width: 992px) {
+  /* line 19, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
   .slice_bio_3_buttons .block2-2 {
     width: 47.42268%;
     float: left;
@@ -1232,16 +1214,16 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     margin-right: 1.28866%;
   }
 }
-/* line 33, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
-.slice_bio_3_buttons .block2-2 .block3 a {
+/* line 27, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .block3 .bio-icon-block {
   width: 97.42268%;
   float: left;
   margin-left: 1.28866%;
   margin-right: 1.28866%;
 }
-@media (min-width: 992px) {
-  /* line 33, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
-  .slice_bio_3_buttons .block2-2 .block3 a {
+@media (min-width: 467px) {
+  /* line 27, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-2 .block3 .bio-icon-block {
     width: 30.75601%;
     float: left;
     margin-left: 1.28866%;
@@ -1249,36 +1231,72 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   }
 }
 
-/* line 52, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+/* line 44, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
 .slice_bio_3_buttons {
   background-color: #fff;
-  padding: 30px 0;
+  padding: 40px 0 60px;
 }
-/* line 59, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
-.slice_bio_3_buttons .block2-1 .bio-image {
-  display: block;
-  width: 50%;
-  margin: 0 auto 20px;
-}
-/* line 67, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
-.slice_bio_3_buttons .block2-2 {
-  padding: 15px;
-  color: #5c585d;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+/* line 49, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons h1 {
+  color: #565270;
   text-align: center;
 }
+/* line 54, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-1 {
+  padding-top: 30px;
+}
+/* line 58, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-1 .bio-image {
+  display: block;
+  width: 60%;
+  margin: 0 auto 20px;
+}
 @media (min-width: 768px) {
-  /* line 67, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  /* line 58, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-1 .bio-image {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 58, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-1 .bio-image {
+    width: 60%;
+  }
+}
+/* line 73, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 {
+  padding: 20px 15px 15px;
+  color: #5c585d;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+}
+/* line 80, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .get-in-touch {
+  background-color: #b89d92;
+  border-color: #b89d92;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  display: block;
+  margin: 30px auto 50px;
+  max-width: 150px;
+}
+/* line 91, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .get-in-touch:hover {
+  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  /* line 73, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
   .slice_bio_3_buttons .block2-2 {
     text-align: left;
     font-size: 1.6rem;
     line-height: 2rem;
-    padding-left: 85px;
   }
 }
 @media (min-width: 992px) {
-  /* line 67, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  /* line 73, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
   .slice_bio_3_buttons .block2-2 {
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -1286,9 +1304,219 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     padding-bottom: 25px;
   }
 }
-/* line 89, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
-.slice_bio_3_buttons .block2-2 .block3 a {
+/* line 110, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .block3 .bio-icon-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 114, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon {
+  background-color: transparent;
+  border: 2px solid #e8e3e1;
+  border-radius: 80px;
+  color: #565270;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-family: Merriweather, serif;
   display: block;
+  position: relative;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  padding-top: 86px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 131, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon:hover {
+  border-color: #d55d77;
+  color: #d55d77;
+}
+/* line 136, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon:after {
+  content: "\e908";
+  font-family: journey;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  font-size: 40px;
+  color: #d55d77;
+  top: 40px;
+  left: 53px;
+  z-index: 1;
+}
+/* line 149, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon.events:after {
+  content: "\e910";
+}
+/* line 152, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+.slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon.media:after {
+  content: "\e907";
+}
+@media (min-width: 467px) {
+  /* line 114, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    height: 125px;
+    width: 125px;
+    padding-top: 77px;
+  }
+  /* line 164, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon:after {
+    font-size: 35px;
+    top: 43px;
+    left: 45px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 114, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    height: 150px;
+    width: 150px;
+    padding-top: 86px;
+  }
+  /* line 180, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon:after {
+    font-size: 40px;
+    top: 40px;
+    left: 53px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 114, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon {
+    height: 145px;
+    width: 145px;
+  }
+  /* line 191, ../../../components/sass/modules/_slice_bio_3_buttons.scss */
+  .slice_bio_3_buttons .block2-2 .block3 .bio-icon-block .bio-icon:after {
+    left: 50px;
+  }
+}
+
+/* line 7, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 {
+  width: 97.42268%;
+  float: left;
+  margin-left: 1.28866%;
+  margin-right: 1.28866%;
+}
+@media (min-width: 768px) {
+  /* line 10, ../../../components/sass/modules/_slice_cal_4.scss */
+  .slice_cal_4 .regularEvents > div {
+    width: 47.42268%;
+    float: left;
+    margin-left: 1.28866%;
+    margin-right: 1.28866%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 10, ../../../components/sass/modules/_slice_cal_4.scss */
+  .slice_cal_4 .regularEvents > div {
+    width: 22.42268%;
+    float: left;
+    margin-left: 1.28866%;
+    margin-right: 1.28866%;
+  }
+}
+
+/* line 25, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #69648b;
+}
+/* line 30, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 h1 {
+  color: #fff;
+  text-align: center;
+}
+/* line 35, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents {
+  display: flex;
+  flex-wrap: wrap;
+  color: #565270;
+  font-size: 2rem;
+  font-family: Merriweather, serif;
+  margin-top: 30px;
+}
+/* line 43, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+/* line 51, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListImage a {
+  display: block;
+  width: 100%;
+}
+/* line 55, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListImage a img {
+  width: 100%;
+  display: block;
+}
+/* line 63, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListTitle {
+  background-color: #fff;
+  padding: 8px 15px;
+}
+/* line 68, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListTitle a {
+  font-size: 2rem;
+  font-family: Merriweather, serif;
+  color: #565270;
+  font-weight: 700;
+}
+/* line 74, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListTitle a:hover {
+  opacity: 0.8;
+}
+/* line 81, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListSummary {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #2d4048;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e3e1;
+  padding: 8px 15px 15px;
+  flex: 1 0 auto;
+}
+/* line 92, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListLink {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 97, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListLink a {
+  font-size: 1.6rem;
+  color: #b89d92;
+  display: block;
+  padding: 8px 15px;
+  transition: all 500ms ease;
+  text-decoration: none;
+  background-color: transparent;
+}
+/* line 106, ../../../components/sass/modules/_slice_cal_4.scss */
+.slice_cal_4 .regularEvents > div .articleListLink a:hover {
+  color: #d55d77;
+}
+@media (min-width: 768px) {
+  /* line 25, ../../../components/sass/modules/_slice_cal_4.scss */
+  .slice_cal_4 {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 25, ../../../components/sass/modules/_slice_cal_4.scss */
+  .slice_cal_4 {
+    padding-bottom: 60px;
+  }
 }
 
 /* line 13, ../../../components/sass/modules/_slice_block1_image.scss */
@@ -2818,126 +3046,6 @@ input#_ctl0__ctl0_cphBody_cphContents_txt_dob_month_uk {
 /* line 712, ../../../components/sass/modules/_slice_system_pages.scss */
 input#_ctl0__ctl0_cphBody_cphContents_txt_dob_year_uk {
   width: 80px !important;
-}
-
-/* line 7, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 {
-  width: 97.42268%;
-  float: left;
-  margin-left: 1.28866%;
-  margin-right: 1.28866%;
-}
-@media (min-width: 768px) {
-  /* line 10, ../../../components/sass/modules/_slice_al_4.scss */
-  .slice_al_4 .info_cards > div {
-    width: 47.42268%;
-    float: left;
-    margin-left: 1.28866%;
-    margin-right: 1.28866%;
-  }
-}
-@media (min-width: 992px) {
-  /* line 10, ../../../components/sass/modules/_slice_al_4.scss */
-  .slice_al_4 .info_cards > div {
-    width: 22.42268%;
-    float: left;
-    margin-left: 1.28866%;
-    margin-right: 1.28866%;
-  }
-}
-
-/* line 25, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 {
-  padding-bottom: 30px;
-  text-align: center;
-}
-/* line 30, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div {
-  padding-top: 30px;
-}
-/* line 36, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div .articleListImage4 a {
-  border-radius: 50%;
-  border: 5px solid #d1d2d4;
-  overflow: hidden;
-  width: 180px;
-  height: 180px;
-  display: block;
-  margin: 0 auto;
-}
-/* line 45, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div .articleListImage4 a img {
-  width: 175px;
-  height: 171px;
-}
-/* line 53, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div .articleListTitle4 {
-  margin-top: 18px;
-}
-/* line 57, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div .articleListTitle4 a {
-  font-size: 2rem;
-  color: #2d4048;
-  font-weight: 700;
-}
-/* line 62, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div .articleListTitle4 a:hover {
-  opacity: 0.8;
-}
-/* line 69, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div .articleListSummary4 {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  padding: 0 35px !important;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #2d4048;
-}
-@media (min-width: 768px) {
-  /* line 69, ../../../components/sass/modules/_slice_al_4.scss */
-  .slice_al_4 .info_cards > div .articleListSummary4 {
-    min-height: 60px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 69, ../../../components/sass/modules/_slice_al_4.scss */
-  .slice_al_4 .info_cards > div .articleListSummary4 {
-    min-height: 100px;
-  }
-}
-/* line 91, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div .articleListLink4 a, .slice_al_4 .info_cards > div .articleListLink a {
-  font-size: 1.4rem;
-  color: #129dc0;
-  border: 2px solid #129dc0;
-  display: inline-block;
-  margin-top: 10px;
-  margin-right: 5px;
-  padding: 9px 15px;
-  border-radius: 5px;
-  transition: all 500ms ease;
-  text-align: center;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: transparent;
-}
-/* line 107, ../../../components/sass/modules/_slice_al_4.scss */
-.slice_al_4 .info_cards > div .articleListLink4 a:hover, .slice_al_4 .info_cards > div .articleListLink a:hover {
-  color: #fff;
-  background-color: #129dc0;
-}
-@media (min-width: 768px) {
-  /* line 25, ../../../components/sass/modules/_slice_al_4.scss */
-  .slice_al_4 {
-    padding-bottom: 50px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 25, ../../../components/sass/modules/_slice_al_4.scss */
-  .slice_al_4 {
-    padding-bottom: 60px;
-  }
 }
 
 /* line 9, ../../../components/sass/modules/_slice_al_3.scss */

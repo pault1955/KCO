@@ -171,18 +171,50 @@ $block2_icon_font-size: 4rem;
 //  slice bio
 // ======================================
 
+$bio_heading_color: #565270;
 $bio-color: #5c585d;
 $bio_title-color: #565270;
 $bio_title_font-size: 4rem;
 $bio_title_margin-bottom: 1rem;
+$bio_text_font-size: 1.6rem;
+$bio_text_line-height: $bio_text_font-size + 0.4rem;
 $bio_background-color: #fff;
 $bio_icon_color: #b89d92;
 $bio_icon_font-size: 4rem;
 $bio_button_color: #fff;
 $bio_button_background-color: #b89d92;
+$bio_button_border-color: #b89d92;
 $bio_button_font-size: 2rem;
+$bio_button_font-family: $default_font-family;
+$bio_icon_color: #565270;
+$bio_icon_color--hover: #d55d77;
+$bio_icon_background-color: transparent;
+$bio_icon_border-color: #e8e3e1;
+$bio_icon_border-color--hover: #d55d77;
+$bio_icon_icon-color: #d55d77;
+$bio_icon_font-size: 1.8rem;
+$bio_icon_font-family: $default_font-family-2;
 
+// ======================================
+//  slice article list 4
+// ======================================
 
+$al_4_background-color: #69648b;
+$al_4_heading-color: #fff;
+$al_4_card_background-color: #fff;
+$al_4_title_color: #565270;
+$al_4_title_font-size: 2rem;
+$al_4_title_font-family: $default_font-family-2;
+$al_4_title_background-color: #fff;
+$al_4_summary_color: #2d4048;
+$al_4_summary_font-size: 1.6rem;
+$al_4_summary-line-height: 2.4rem;
+$al_4_summary_background-color: #fff;
+$al_4_summary_border-color: #e8e3e1;
+$al_4_link_color: #b89d92;
+$al_4_link_color--hover: #d55d77;
+$al_4_link_font-size: 1.6rem;
+$al_4_link_border-color: #129dc0;
 
 // ======================================
 //  slice block 1
@@ -292,21 +324,7 @@ $block1_image2_button-border-color--hover: #129dc0;
 $block1_image2_button_background-color: transparent;
 $block1_image2_button_background-color--hover: #129dc0;
 
-// ======================================
-//  slice article list 4
-// ======================================
 
-$al_4_image-border-color: #d1d2d4;
-$al_4_title-color: #2d4048;
-$al_4_title-font-size: 2rem;
-$al_4_summary-color: #2d4048;
-$al_4_summary-font-size: 1.6rem;
-$al_4_summary-line-height: 2.4rem;
-$al_4_link-color: #129dc0;
-$al_4_link-color--hover: #fff;
-$al_4_link-font-size: 1.4rem;
-$al_4_link-border-color: #129dc0;
-$al_4_link-background-color--hover: #129dc0;
 
 // ======================================
 //  slice media list 3

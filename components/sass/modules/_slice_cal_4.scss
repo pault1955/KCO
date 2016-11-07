@@ -1,0 +1,122 @@
+// ======================================
+//  article list - 4 articles - Image-Title-Summary-Link
+// ======================================
+
+// article list - 4 articles layout
+// ======================================
+.slice_cal_4 {
+  @include span(12);
+
+  .regularEvents > div {
+
+    @include susy-breakpoint($breakpoint-sm) {
+      @include span(6);
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(3);
+    }
+  }
+}
+
+// article list - 4 articles  style
+// ======================================
+
+.slice_cal_4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $al_4_background-color;
+
+  h1 {
+    color: $al_4_heading-color;
+    text-align: center;
+  }
+
+  .regularEvents {
+    display: flex;
+    flex-wrap: wrap;
+    color: $al_4_title_color;
+    font-size: $al_4_title_font-size;
+    font-family: $al_4_title_font-family;
+    margin-top: 30px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      background-color: $al_4_card_background-color;
+      margin-bottom: 40px;
+
+      .articleListImage {
+
+        a {
+          display: block;
+          width: 100%;
+
+          img {
+            width: 100%;
+            display: block;
+          }
+
+        }
+      }
+
+      .articleListTitle {
+
+        background-color: $al_4_title_background-color;
+        padding: 8px 15px;
+
+        a {
+          font-size: $al_4_title_font-size;
+          font-family: $al_4_title_font-family;
+          color: $al_4_title_color;
+          font-weight: $bold;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+      }
+
+      .articleListSummary {
+
+        font-size: $al_4_summary_font-size;
+        line-height: $al_4_summary_line-height;
+        color: $al_4_summary_color;
+        background-color: $al_4_summary_background-color;
+        border-bottom: 1px solid $al_4_summary_border-color;
+        padding: 8px 15px 15px;
+        flex: 1 0 auto;
+      }
+
+      .articleListLink {
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        a {
+          font-size: $al_4_link_font-size;
+          color: $al_4_link_color;
+          display: block;
+          padding: 8px 15px;
+          transition: all 500ms ease;
+          text-decoration: none;
+          background-color: transparent;
+
+          &:hover {
+            color: $al_4_link_color--hover;
+          }
+        }
+      }
+
+    }
+  }
+
+  @include susy-breakpoint($breakpoint-sm) {
+    padding-bottom: 50px;
+  }
+
+  @include susy-breakpoint($breakpoint-md) {
+    padding-bottom: 60px;
+  }
+}

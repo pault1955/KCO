@@ -6,43 +6,35 @@
 // ======================================
 .slice_bio_3_buttons {
 
-    .block2-1, .block2-2 {
+  .block2-1, .block2-2 {
+    @include span(12);
+  }
+
+  .block2-1 {
+
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(6);
+    }
+  }
+  .block2-2 {
+
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(6);
+    }
+
+    .block3 {
+
+      .bio-icon-block {
         @include span(12);
-    }
-
-
-    .block2-1 {
-        @include susy-breakpoint($breakpoint-ti) {
-            @include span(3);
-        }
-
-        @include susy-breakpoint($breakpoint-sm) {
-            @include span(6);
-        }
-    }
-    .block2-2 {
 
         @include susy-breakpoint($breakpoint-ti) {
-            @include span(9);
+          @include span(4);
         }
 
-        @include susy-breakpoint($breakpoint-sm) {
-            @include span(6);
-        }
-
-        .block3 a {
-            @include span(12);
-
-            @include susy-breakpoint($breakpoint-md) {
-                @include span(4);
-            }
-        }
-
+      }
     }
 
-    .block3  {
-
-    }
+  }
 
 }
 
@@ -51,46 +43,162 @@
 
 .slice_bio_3_buttons {
 
-    background-color: $bio-background-color;
-    padding: 30px 0;
+  background-color: $bio-background-color;
+  padding: 40px 0 60px;
 
-    .block2-1 {
+  h1 {
+    color: $bio_heading_color;
+    text-align: center;
+  }
 
-        .bio-image {
-            display: block;
-            width: 50%;
-            margin: 0 auto 20px;
-        }
+  .block2-1 {
+
+    padding-top: 30px;
+
+    .bio-image {
+      display: block;
+      width: 60%;
+      margin: 0 auto 20px;
+
+      @include susy-breakpoint($breakpoint-sm) {
+        width: 40%;
+      }
+
+      @include susy-breakpoint($breakpoint-md) {
+        width: 60%;
+      }
+    }
+  }
+
+  .block2-2 {
+    padding: 20px 15px 15px;
+    color: $bio_color;
+    font-size: $bio_text_font-size;
+    line-height: $bio_text_line-height;
+    text-align: center;
+
+    .get-in-touch {
+      background-color: $bio_button_background-color;
+      border-color: $bio_button_border-color;
+      color: $bio_button_color;
+      font-size: $bio_button_font-size;
+      font-family: $bio_button_font-family;
+      text-align: center;
+      display: block;
+      margin: 30px auto 50px;
+      max-width: 150px;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
+    @include susy-breakpoint ($breakpoint-sm) {
+      text-align: left;
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+    @include susy-breakpoint ($breakpoint-md) {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
 
-    .block2-2 {
-        padding: 15px;
-        color: $bio_color;
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        text-align: center;
+    .block3 {
 
+      .bio-icon-block {
+        padding-top: 10px;
+        padding-bottom: 10px;
 
-        @include susy-breakpoint ($breakpoint-sm) {
-            text-align: left;
-            font-size: 1.6rem;
-            line-height: 2rem;
-            padding-left: 85px;
-        }
-        @include susy-breakpoint ($breakpoint-md) {
-            font-size: 1.8rem;
-            line-height: 2.2rem;
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
+        .bio-icon {
+          background-color: $bio_icon_background-color;
+          border: 2px solid $bio_icon_border-color;
+          border-radius: 80px;
+          color: $bio_icon_color;
+          font-size: $bio_icon_font-size;
+          line-height: $bio_icon_font-size + 0.2rem;
+          font-family: $bio_icon_font-family;
+          display: block;
+          position: relative;;
+          text-align: center;
+          height: 150px;
+          width: 150px;
+          padding-top: 86px;
+          margin-left: auto;
+          margin-right: auto;
 
-        .block3 {
-            a {
-                display: block;
+          &:hover {
+            border-color: $bio_icon_border-color--hover;
+            color: $bio_icon_color--hover;
+          }
+
+          &:after {
+            content: "\e908";
+            font-family: journey;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            position: absolute;
+            font-size: 40px;
+            color: $bio_icon_icon-color;
+            top: 40px;
+            left: 53px;
+            z-index: 1;
+          }
+          &.events:after {
+            content: "\e910";
+          }
+          &.media:after {
+            content: "\e907";
+          }
+
+          @include susy-breakpoint($breakpoint-ti) {
+
+            font-size: $bio_icon_font-size - 0.4rem;
+            line-height: $bio_icon_font-size - 0.2rem;
+            height: 125px;
+            width: 125px;
+            padding-top: 77px;
+
+            &:after {
+              font-size: 35px;
+              top: 43px;
+              left: 45px;
             }
+
+          }
+
+          @include susy-breakpoint($breakpoint-sm) {
+
+            font-size: $bio_icon_font-size;
+            line-height: $bio_icon_font-size + 0.2rem;
+            height: 150px;
+            width: 150px;
+            padding-top: 86px;
+
+            &:after {
+              font-size: 40px;
+              top: 40px;
+              left: 53px;
+            }
+
+          }
+          @include susy-breakpoint($breakpoint-md) {
+            height: 145px;
+            width: 145px;
+
+            &:after {
+              left: 50px;
+            }
+          }
+
         }
+
+      }
+
     }
-
-
+  }
 }
+
+

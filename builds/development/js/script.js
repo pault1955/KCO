@@ -43,26 +43,6 @@ $(document).ready(function () {
     }
   });
 
-  $('.slice_slideshow_full_width  .bannerSlides .gallery_ul').show().bxSlider({
-    mode: 'fade',
-    auto: true,
-    pause: 8000,
-    speed: 500,
-    pager: true,
-    controls: true,
-    preloadImages: 'all'
-  });
-
-
-  $( '.slice_slideshow_full_width  .bannerSlides ul li.gallery_li a img' ).each(function( ) {
-    var slideLink = $(this).parent().attr('href');
-    var alt = $(this).attr('alt');
-    var data = $.parseHTML( alt );
-    var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
-    var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
-    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">Read more</a></div>';
-    $(caption).insertAfter( this );
-  });
 
   $('.slice_slideshow_mini  .bannerSlides .gallery_ul').show().bxSlider({
     mode: 'horizontal',
@@ -74,23 +54,18 @@ $(document).ready(function () {
     preloadImages: 'all'
   });
 
-  $('.slice_al_4 .articleListTitle4 a').each(function (index) {
+
+  // regular events
+
+  $('.slice_cal_4 .articleListTitle a').each(function (index) {
     var titleLink = $(this).attr("href");
-    $(this).parent().parent().find('.articleListLink4').wrapInner('<a  class="info_cards_button" href="' + titleLink + '">');
+    $(this).parent().parent().find('.articleListLink').wrapInner('<a  href="' + titleLink + '">');
   });
 
-
-  // recent_media
-
-  $('.slice_ml_3 .mediaListTitle3 a').each(function (index) {
-    var titleLink = $(this).attr("href");
-    $(this).parent().parent().find('.mediaListLink3').wrapInner('<a  href="' + titleLink + '">');
-  });
-
-  $('.slice_ml_3 .mediaListImage3 img').each(function (index) {
-    var imagePath = $(this).attr('src');
-    $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=280&h=157&url=/", "/"));
-  });
+    $('.slice_cal_4 .articleListImage img').each(function (index) {
+        var imagePath = $(this).attr('src');
+        $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=262&h=156&url=", "/"));
+    });
 
   // Gallery 6
 
