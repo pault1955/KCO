@@ -1,0 +1,93 @@
+// ======================================
+// slice  list 2 blocks
+// ======================================
+
+// slice  list 2 layout
+// ======================================
+.slice_list_2 {
+
+  .sub-title {
+    @include susy-breakpoint($breakpoint-sm) {
+      @include span(10);
+      margin-left: span(1 wide of 12);
+      }
+    }
+
+  .courses {
+    @include span(12);
+  }
+
+  .course-list {
+
+    @include susy-breakpoint($breakpoint-ti) {
+      @include span(10);
+      margin-left: span(1 wide of 12);
+    }
+    @include susy-breakpoint($breakpoint-sm) {
+      @include span(5);
+      margin-left: span(1 wide of 12);
+
+      &:last-of-type {
+        margin-left: span(0 wide of 12);
+      }
+    }
+  }
+
+}
+
+// slice  list 2 style
+// ======================================
+
+.slice_list_2 {
+
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: $list2-background-color;
+  text-align: center;
+
+
+  .sub-title {
+    padding: 20px 40px 30px;
+    line-height: $list2_sub_title_font-size + 0.2;
+
+  }
+  .course-list {
+
+    .course-link {
+      display: block;
+      color: $list2_link_color;
+      font-size: $list2_link_font-size;
+      text-decoration: none;
+      background-color: $list2_course_link_background-color;
+      border-radius: 4px;
+      transition: all 500ms ease;
+      text-align: left;
+      margin-top: 10px;
+      padding: 15px 18px;
+
+      &:hover {
+        background-color: $list2_course_link_background-color--hover;
+      }
+
+
+      @include susy-breakpoint ($breakpoint-md) {
+        font-size: $list2_link_font-size + 0.4;
+        line-height: $list2_link_font-size + 0.6;
+      }
+
+    }
+
+  }
+  @include susy-breakpoint ($breakpoint-sm) {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  @include susy-breakpoint ($breakpoint-md) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+}
+
+

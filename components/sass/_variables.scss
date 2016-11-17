@@ -38,10 +38,10 @@ $default_line-height : $default_font-size + 0.2rem;
 $default_link_color: #129dc0;
 $default_link-color--hover : #4acfc7;
 $default_background-color: #fff;
-$default_button-background-color: #129dc0;
-$default_button-background-color--hover: #129dc0;
-$default_button-border-color: #129dc0;
-$default_button-border-color--hover: #129dc0;
+$default_button-background-color: #b89d92;
+$default_button-background-color--hover: #b89d92;
+$default_button-border-color: #b89d92;
+$default_button-border-color--hover: #b89d92;
 $default_button-color: #fff;
 $default_button-color--hover: #fff;
 $default_form_border-color: #dadee4;
@@ -217,6 +217,99 @@ $al_4_link_font-size: 1.6rem;
 $al_4_link_border-color: #129dc0;
 
 // ======================================
+//  slice slideshow mini
+// ======================================
+$slideshow_mini-color: #fff;
+$slideshow_mini_title-color: #565270;
+$slideshow_mini_title_font-family: $default_font-family-2;
+$slideshow_mini_title_font-size: 2rem;
+$slideshow_mini_title_margin-bottom: 2rem;
+$slideshow_mini_slice-background-image: none;
+$slideshow_mini-background-color: #fff;
+$slideshow_mini_pager-background-color: #cccccc;
+$slideshow_mini_pager-background-color--active: #a590a2;
+$slideshow_mini_pager-width-height: 14px;
+$slideshow_mini_control-background-color: transparent;
+$slideshow_mini_icon_font-size: 2rem;
+$slideshow_mini_icon_color: #fff;
+$slideshow_mini_icon_color--hover: #efefef;
+
+// ======================================
+//  slice list 2
+// ======================================
+
+$list2_title-color: #565270;
+$list2_background-color: #f2edea;
+$list2_sub_title-color: #5c585d;
+$list2_sub_title_font-size: 2rem;
+$list2_link_color: #fff;
+$list2_link_font-size: 1.6rem;
+$list2_course_link_background-color: #615265;
+$list2_course_link_background-color--hover: #d55d77;
+
+// ======================================
+//  slice block 3 full width
+// ======================================
+
+$block3_full_width_title-color: #fff;
+$block3_full_width_background-color: #fff;
+$block3_full_width_link_color: #fff;
+$block3_full_width_link_color--hover: #555;
+$block3_full_width_link_background-color: transparent;
+$block3_full_width_link_background-color--hover: #fff;
+$block3_full_width_link_border-color: #fff;
+$block3_full_width_link_border-color--hover: #fff;
+$block3_full_width_link_font-size: 1.6rem;
+
+// ======================================
+//  slice bio story
+// ======================================
+
+$bio_story_heading_color: #565270;
+$bio_story-color: #5c585d;
+$bio_story_title-color: #565270;
+$bio_story_title_font-size: 4rem;
+$bio_story_title_margin-bottom: 1rem;
+$bio_story_text_font-size: 1.6rem;
+$bio_story_text_line-height: $bio_story_text_font-size + 1;
+$bio_story_background-color: #fff;
+$bio_story_icon_color: #b89d92;
+$bio_story_icon_font-size: 4rem;
+$bio_story_button_color: #fff;
+$bio_story_button_background-color: #b89d92;
+$bio_story_button_border-color: #b89d92;
+$bio_story_button_font-size: 2rem;
+$bio_story_button_font-family: $default_font-family;
+
+// ======================================
+//  slice footertop1
+// ======================================
+
+$footertop1_background-color: #403e53;
+$footertop1_font-color: #fff;
+$footertop1_font-color-link: #fff;
+$footertop1_font-color-link--hover: #fff;
+$footertop1_font-size: 1.4rem;
+$footertop1_line-height: $footertop1_font-size * 1.5;
+$footertop1_icon_color: #4acfc7;
+$footertop1_icon_font-size: 4rem;
+
+// ======================================
+//  slice footerbar
+// ======================================
+
+$footerbar_background-color: #403e53;
+$footerbar_font-color: #fff;
+$footerbar_font-size: 1.3rem;
+$footerbar_background-image: url(../images/site-by-churchinsight.png);
+$footerbar_background-image--hover: url(../images/site-by-churchinsight.png);
+$footerbar_border-color: #565270;
+
+
+
+
+
+// ======================================
 //  slice block 1
 // ======================================
 
@@ -260,23 +353,7 @@ $block1_image_button-border-color--hover: #2d9ebd;
 $block1_image_button_background-color: transparent;
 $block1_image_button_background-color--hover: #2d9ebd;
 
-// ======================================
-//  slice slideshow mini
-// ======================================
-$slideshow_mini-color: #fff;
-$slideshow_mini_title-color: #2d4048;
-$slideshow_mini_title_font-size: 2rem;
-$slideshow_mini_title_margin-bottom: 1rem;
-$slideshow_mini_slice-background-image:  #fff url(../images/stripes.png);
-$slideshow_mini-background-color: #fff;
-$slideshow_mini_pager-background-color: transparent;
-$slideshow_mini_pager-border-color: #898989;
-$slideshow_mini_pager-background-color--active: #898989;
-$slideshow_mini_pager-width-height: 14px;
-$slideshow_mini_control-background-color: transparent;
-$slideshow_mini_icon_font-size: 2rem;
-$slideshow_mini_icon_color: #7b878a;
-$slideshow_mini_icon_color--hover: #fff;
+
 
 // ======================================
 //  slice buttons 3
@@ -394,35 +471,7 @@ $al_3_button-border-color: #129dc0;
 $al_3_button-background-color--hover: #129dc0;
 
 
-// ======================================
-//  slice footerbar
-// ======================================
 
-$footerbar_background-color: #f5f5f5;
-$footerbar_font-color: #2d4048;
-$footerbar_font-size: 1.3rem;
-$footerbar_background-image: url(../images/site-by-churchinsight.png);
-$footerbar_background-image--hover: url(../images/site-by-churchinsight-hover.png);
-$footerbar_border-color: #e1e1e1;
-
-
-// ======================================
-//  slice footertop1
-// ======================================
-
-$footertop1_background-color: #f5f5f5;
-$footertop1_font-color: #2b4049;
-$footertop1_font-color-link: #129dc0;
-$footertop1_font-color-link--hover: #4acfc7;
-$footertop1_font-size: 1.4rem;
-$footertop1_line-height: $footertop1_font-size * 1.5;
-$footertop1_icon_color: #4acfc7;
-$footertop1_icon_font-size: 4rem;
-$footertop1_icon_facebook_color: #3b5998;
-$footertop1_icon_twitter_color: #1da1f2;
-$footertop1_icon_vimeo_color: #1ab7ea;
-$footertop1_icon_googleplus_color: #d34836;
-$footertop1_icon_linkedin_color: #0077b5;
 
 // ======================================
 //  content page
@@ -485,12 +534,12 @@ $video_button-background-color--hover: #129dc0;
 //  system
 // ======================================
 
-$system_sitebutton_border-color: #129dc0;
-$system_sitebutton_border-color--hover: #129dc0;
-$system_sitebutton_color: #129dc0;
+$system_sitebutton_border-color: #b89d92;
+$system_sitebutton_border-color--hover: #b89d92;
+$system_sitebutton_color: #fff;
 $system_sitebutton_color--hover: #fff;
-$system_sitebutton_background-color: #129dc0;
-$system_sitebutton_background-color--hover: #129dc0;
+$system_sitebutton_background-color: #b89d92;
+$system_sitebutton_background-color--hover: #b89d92;
 
 
 

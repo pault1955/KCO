@@ -1,0 +1,72 @@
+// ======================================
+// slice  bio
+// ======================================
+
+// slice  bio layout
+// ======================================
+.slice_bio {
+
+  .block2-1, .block2-2 {
+    @include span(12);
+
+    @include susy-breakpoint($breakpoint-sm) {
+      @include span(6);
+    }
+  }
+
+}
+
+// slice  bio  style
+// ======================================
+
+.slice_bio {
+
+  background-color: $bio_story-background-color;
+  padding: 40px 0 ;
+
+  h1 {
+    color: $bio_story_heading_color;
+    text-align: center;
+  }
+
+  .block2-1 {
+
+    padding-top: 30px;
+
+    .bio-image img {
+      display: block;
+      width: 85%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
+
+  .block2-2 {
+    padding: 35px 15px 15px;
+    color: $bio_story_color;
+    font-size: $bio_story_text_font-size;
+    line-height: $bio_story_text_line-height;
+
+    .good-news-stories {
+      background-color: $bio_story_button_background-color;
+      border-color: $bio_story_button_border-color;
+      color: $bio_story_button_color;
+      font-size: $bio_story_button_font-size;
+      font-family: $bio_story_button_font-family;
+      text-align: center;
+      display: block;
+      margin: 30px auto 50px;
+      max-width: 270px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  @include susy-breakpoint($breakpoint-md) {
+    padding-bottom: 70px;
+  }
+}
+
+

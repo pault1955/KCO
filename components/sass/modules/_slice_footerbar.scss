@@ -11,13 +11,14 @@
 .slice_footerbar {
 
   background-color: $footerbar-background-color;
-  border-top: 1px solid $footerbar_border-color;
+
 
   .footerbar {
     font-size: $footerbar_font-size;
     text-align: center;
     padding: 25px 0 40px;
     line-height: 30px;
+    border-top: 1px solid $footerbar_border-color;
 
     a {
       display: inline-block;

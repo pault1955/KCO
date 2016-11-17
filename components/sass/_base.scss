@@ -128,7 +128,7 @@ input[type=button], input[type=submit]       {
   text-align: center;
   text-decoration: none;
   border: 2px solid $system_sitebutton_border-color;
-  background-color: transparent;
+  background-color: $system_sitebutton_background-color;
   color: $system_sitebutton_color;
 
 }
@@ -138,6 +138,7 @@ input[type=button], input[type=submit]       {
   border: 2px solid $system_sitebutton_border-color--hover;
   background-color: $system_sitebutton_background-color--hover;
   cursor: pointer;
+  opacity: 0.8;
 }
 ::-ms-input-placeholder,
 ::-webkit-input-placeholder,

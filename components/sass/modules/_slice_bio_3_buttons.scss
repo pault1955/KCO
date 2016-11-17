@@ -44,7 +44,7 @@
 .slice_bio_3_buttons {
 
   background-color: $bio-background-color;
-  padding: 40px 0 60px;
+  padding: 40px 0;
 
   h1 {
     color: $bio_heading_color;
@@ -65,8 +65,9 @@
       }
 
       @include susy-breakpoint($breakpoint-md) {
-        width: 60%;
+        width: 75%;
       }
+
     }
   }
 

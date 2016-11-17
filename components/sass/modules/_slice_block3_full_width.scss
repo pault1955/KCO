@@ -1,0 +1,99 @@
+// ======================================
+// slice  blocks 3
+// ======================================
+
+// slice  blocks 3 layout
+// ======================================
+.slice_block3_full_width {
+
+  .blocks > div {
+    width: 100%;
+    float: left;
+
+    @include susy-breakpoint($breakpoint-sm) {
+      width: 33.3333333%;
+    }
+  }
+}
+
+// slice  blocks 3 style
+// ======================================
+
+.slice_block3_full_width {
+  .blocks {
+    div {
+
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      position: relative;
+      text-align: center;
+      height: 300px;
+      display: table;
+
+      .block-text {
+
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        h1 {
+          color: #fff;
+          margin-bottom: 30px;
+          font-size: 30px;
+          line-height: 44px;
+
+          @include susy-breakpoint($breakpoint-sm) {
+            font-size: 35px;
+            line-height: 50px;
+          }
+
+          @include susy-breakpoint($breakpoint-md) {
+            font-size: 45px;
+            line-height: 70px;
+          }
+        }
+
+        a {
+          display: block;
+          padding: 10px 12px;
+          color: $block3_full_width_link_color;
+          font-size: $block3_full_width_link_font-size;
+          background-color: $block3_full_width_link_background-color;
+          border: 2px solid $block3_full_width_link_border-color;
+          border-radius: 4px;
+          transition: all 500ms ease;
+          max-width: 125px;
+          margin-left:auto;
+          margin-right:auto;
+
+          &:hover {
+            color: $block3_full_width_link_color--hover;
+            background-color: $block3_full_width_link_background-color--hover;
+            border: 2px solid $block3_full_width_link_border-color--hover;
+          }
+        }
+      }
+      &.block1 {
+        background-image: url(../images/facilities-hire-block.jpg);
+      }
+
+      &.block2 {
+        background-image: url(../images/location-block.jpg);
+      }
+
+      &.block3 {
+        background-image: url(../images/coffee-shop-block.jpg);
+      }
+
+      @include susy-breakpoint($breakpoint-sm) {
+        height: 450px;
+      }
+
+      @include susy-breakpoint($breakpoint-md) {
+        height: 600px;
+      }
+    }
+
+  }
+}
